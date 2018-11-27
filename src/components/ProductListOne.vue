@@ -14,11 +14,13 @@
 
 export default {
   name: 'product-list-one',
-  props : [
-      'products',
-      ],
   data () {
     return {}
+  },
+  computed : {
+      products(){
+          return this.$store.state.products;
+      }
   }
 }
 </script>
